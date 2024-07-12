@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+<div class=div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let h of watch">
+<div class="col"></div>
+<div class="card">
+    <img [src]="h.src" [alt]="h.alt">
+    <div class="card-title">
+        <h1>{{h.title}}</h1>
+   
+<div class="card-description">
+    <p>{{h.description}}</p>
+    <button class="btn btn-outerline-primary">{{h.button}}</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+</section>
+<router-outlet></router-outlet>

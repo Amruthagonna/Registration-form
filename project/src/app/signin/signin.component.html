@@ -1,0 +1,13 @@
+<form [formGroup]="signin">
+    <h1 color="black">RegistrationForm</h1>
+    <input type="emai"placeholder="enter email"formControlName="email">
+    <small *ngIf="signin.get('email')?.hasError('requrired')&& signin.get('email')?.touched">enter correct email</small>
+    <small *ngIf="signin.get('email')?.hasError('minlength')&& signin.get('email')?.touched">enter correct email</small>
+    <small *ngIf="signin.get('email')?.hasError('maxlength')&& signin.get('email')?.touched">enter correct email</small>
+     <input type="username"placeholder="enter username"formControlName="username">
+     <small *ngIf="signin.get('username')?.hasError('minlength')&& signin.get('minlength')?.touched">enter correct email</small>
+    <input type="password"placeholder="enter password"formControlName="password">
+    <button type="submit" display="flex">submit</button>
+    <button type="submit" display="flex">Reset</button>
+
+</form>
